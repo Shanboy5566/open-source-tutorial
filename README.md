@@ -85,7 +85,7 @@ cd hsemotion-onnx
 python3 -m venv venv
 source venv/bin/activate
 
-python3 -m pip install setuptools mediapipe numpy==1.26.0
+python3 -m pip install setuptools mediapipe numpy==1.26.0 onnx onnxruntime
 python3 setup.py install
 python3 demo/recognize_emotions_video.py
 ```
