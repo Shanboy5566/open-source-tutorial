@@ -19,7 +19,9 @@
 
 ## 1-1. 安裝Python環境
 
-檢查系統有無python，有出現版本號代表已安裝
+開啟終端機後，請輸入以下指令:
+
+檢查系統有無python，有出現版本號代表已安裝可以跳制1-2
 
 ```
 python3 --version
@@ -41,6 +43,8 @@ brew install python@3.12
 3. 當 Python 下載結束並完成安裝程序之後，回到VSCode，輸入`python3 --version`，如果有顯示版本號，代表Python已經安裝完成
 
 ## 1-2. 安裝Git
+
+開啟終端機後，請輸入以下指令:
 
 檢查系統有無git，有出現版本號代表已安版
 
@@ -75,11 +79,13 @@ python3 hello_world.py
 
 ## 2. 使用人臉情緒辨識套件
 
+請在終端機上依序執行
+
 ```
 python3 -m venv venv
 source venv/bin/activate
 
-pyton3 -m pip install --upgrade pip
+python3 -m pip install --upgrade pip
 python3 -m pip install -r requirements.txt
 python3 recognize_emotions_video.py
 ```
