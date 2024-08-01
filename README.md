@@ -7,13 +7,15 @@
 2. 使用人臉情緒辨識套件，進行人臉情緒辨識
 
 
-## 0. 安裝VSCode
+## 0. 打開終端機
 
-[VSCode](https://code.visualstudio.com/)是一個由微軟開發的程式編輯器，支援多種程式語言，並且有許多套件可以安裝，讓開發更加方便。
+### For MacOS
 
-安裝完後，打開VSCode
+按下`Command + Space`，輸入`Terminal`，按下`Enter`即可打開終端機
 
-選擇`終端機(Terminal)` > `新增終端機(New terminal)`
+### For Windows
+
+按下`Win + R`，輸入`cmd`，按下`Enter`即可打開終端機
 
 ## 1-1. 安裝Python環境
 
@@ -54,19 +56,16 @@ git --version
 請在終端機上執行
 
 ```
-mkdir -p tutorial
-code hello_world.py
+git clone https://github.com/Shanboy5566/open-source-tutorial.git
 ```
 
-打開檔案後，輸入以下程式碼
+接著進入資料夾
 
 ```
-print("Hello world")
+cd open-source-tutorial
 ```
 
-按下`Ctrl + S`儲存檔案
-
-回到終端機，輸入
+執行`hello.py`
 
 ```
 python3 hello_world.py
@@ -77,15 +76,10 @@ python3 hello_world.py
 ## 2. 使用人臉情緒辨識套件
 
 ```
-git clone https://github.com/av-savchenko/hsemotion-onnx
-```
-
-```
-cd hsemotion-onnx
 python3 -m venv venv
 source venv/bin/activate
 
-python3 -m pip install setuptools mediapipe numpy==1.26.0 onnx onnxruntime
-python3 setup.py install
-python3 demo/recognize_emotions_video.py
+pyton3 -m pip install --upgrade pip
+python3 -m pip install -r requirements.txt
+python3 recognize_emotions_video.py
 ```

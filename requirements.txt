@@ -1,0 +1,7 @@
+setuptools
+mediapipe
+numpy==1.26.0
+opencv-python
+onnx
+onnxruntime
+hsemotion-onnx
