@@ -30,6 +30,7 @@ python3 --version
 ### For MacOS
 
 ```
+xcode-select --install
 brew update
 brew install python@3.12
 ```
