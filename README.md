@@ -73,7 +73,7 @@ cd open-source-tutorial
 執行`hello.py`
 
 ```
-python3 hello_world.py
+python3 hello.py
 ```
 
 如果有出現`Hello world`，代表程式執行成功
